@@ -80,13 +80,13 @@ Other features were created transiently to aid in the preparation of visualizati
 
 ## Summary of Findings
 
-**Question #1:** Is it always the weather ???
+**Question #1:**
   Through this question, the intention was to elucidate the most common reasons behind delayed flights in the US as categorized by the US Department of Transportation. Delays due to **CARRIER** were found to be the most common on average
 
-**Question #2:** This is the last time I am flying this airline !!!
+**Question #2:**
   In this section, the intention was to get a deeper look into each airline that operated in the US during the period 2014-2018 in terms of delays and their causes. The findings were summarized in a visualization that compares the performance of each airline in terms of percentage of delay flights during the period specified.
   
-**Question #3:** Does size matters ???
+**Question #3:**
   The question above, demanded an evaluation of a possible relationship between the size of the operations of the airlines included in the study and the percentage of delayed flights during the specified period. No relationship was found between the two variables, since large and small size airlines performed very similar on average.
   
 For more details about this observations, visit the post[https://medium.com/@jeanpitteloud/delayed-flights-in-the-us-6a25e05cf5c2] on Medium.
