@@ -1,6 +1,6 @@
 # DELAYED FLIGHTS IN THE US: A Painful Reality 
 
-This work is inspired by a recent event that almost ruined a pleasant long weekdend in San Juan, Puerto Rico. What started as a fun trip to this beatiful island, slowly changed into a very painful experience for my family. A flight that was supposed to leave at 8:30 PM in the evening ended up leaving at 2:30 AM. The long wait was horrific, 2 hours inside a plane without A/C probably resembled more a torture than a pleasure. Since my intention is not to bore you with a story that may be millions can share, I decided to know a little bit more about the behind-the-scenes of flight delays
+This work is inspired by a recent event that almost ruined a pleasant long weekdend in San Juan, Puerto Rico after a very long flight delay. On my return I decided to gather some data from public sources (see below) and use some basic data analysis and visualization to understand more in depth the dynamics of flight delays in the United States in the last 5 years (2014-2018). The following three main questions were employed to drive the analysis and the answers to them are briefly stated below
 
 ## Requirements
 The following list of Python packages were employed during the project to handle, clean, and organize the data as well as to create visualization
@@ -17,7 +17,16 @@ rcParams.update({'figure.autolayout': True})
 ```
 ## Data
 
-A master dataset comprising flight delay information exclusive for the United States during the period of 2014-2018, was assembled after manually downloading the corresponding files from the United States Department of Transportation website (Bureau of Transportation Statistics, https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp?pn=1). After storing each separate file in a working directory, a list of files was created and a loop used to read and append the data to a dataframe named 'df_master'. The raw data is presented aggregated by year, month, airline/carrier, and airport, and other feautures related to flight operations, cancellations, and delays. A more detailed description of the available features is presented below:
+A master dataset comprising flight delay information exclusive for the United States during the period of 2014-2018, was assembled after manually downloading the corresponding files from the United States Department of Transportation website (Bureau of Transportation Statistics, https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp?pn=1). The corresponding files can be found in this repository along with the Jupyter Notebook containing all the code employed to transform and analyze the data. The .csv files contain information about flight delays in the United States aggregated by year, month, airline/carrier, and airport. The list below gives the dimensions of each of the files mentioned.
+
+- 2014.csv: 13980 rows and 22 columns
+- 2015.csv: 13528 rows and 22 columns
+- 2016.csv: 12217 rows and 22 columns
+- 2017.csv: 12518 rows and 22 columns
+- 2018.csv: 20231 rows and 22 columns
+- delayed_flights.ipynb: Jupyter Notebook containing code and analysis
+
+After storing each separate file in a working directory, a list of files was created and a loop used to read and append the data to a dataframe named 'df_master'. The raw data is presented aggregated by year, month, airline/carrier, and airport, and other feautures related to flight operations, cancellations, and delays. A more detailed description of the available features is presented below:
 
 - 'year': year
 - 'month': month
@@ -56,6 +65,14 @@ Other features were engineered during the course of the project to provide bette
 - 'min_per_delay': average DELAY DURATION by a specific airline during a specific year and month at a specific airport
 
 Other features were created transiently to aid in the preparation of visualization and more details are offered in the Jupyter Notebook available in this repository.
+
+## Summary of Findings
+
+**Question #1:** Is it always the weather ???
+  Through this question, the intention was to elucidate the most common reasons behind delayed flights in the US as categorized by the US Department of Transportation. Delays due to CARRIER were found to be the most common on average
+
+**Question #2:** This is the last time I am flying this airline !!!
+  In this section, the intention was to get a deeper look into each airline that operated in the US during the period 2014-2018 in terms of delays and their causes. 
 
 ## References
 
