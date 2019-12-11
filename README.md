@@ -61,7 +61,7 @@ After storing each separate file in a working directory, a list of files was cre
 - 'min_security_delay': total combined MINUTES DELAYED due to SECURITY by flights operated a the specific carrier during the specified 'year' and 'month' at a specified airport
 - 'min_late_aircraft_delay': total combined MINUTES DELAYED due to LATE AIRCRAFT by flights operated a the specific carrier during the specified 'year' and 'month' at a specified airport
 
-Appropriate description of the original fields present in the raw dataset can be found in https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations
+Appropriate description of the original fields present in the raw dataset can be found by clicking [here](https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations)
 
 Other features were engineered during the course of the project to provide better comparisons across airlines and airports with different sizes of operations. A list of these features and a brief description is presented as follows:
 
