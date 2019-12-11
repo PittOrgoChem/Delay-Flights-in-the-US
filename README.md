@@ -89,7 +89,7 @@ Other features were created transiently to aid in the preparation of visualizati
 **Question #3:**
   The question above, demanded an evaluation of a possible relationship between the size of the operations of the airlines included in the study and the percentage of delayed flights during the specified period. No relationship was found between the two variables, since large and small size airlines performed very similar on average.
   
-For more details about this observations, visit the post[https://medium.com/@jeanpitteloud/delayed-flights-in-the-us-6a25e05cf5c2] on Medium.
+For more details about this observations, visit the [post](https://medium.com/@jeanpitteloud/delayed-flights-in-the-us-6a25e05cf5c2) on Medium.
 
 ## Licensing, Authors, Acknowledgements
 
